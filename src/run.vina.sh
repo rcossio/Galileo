@@ -10,7 +10,7 @@ function define_names {
 
 function randomize_ligand {
 
-	./vina  --receptor $RECEPTOR  --ligand $LIGAND --out $RANDOMIZED   \
+	vina  --receptor $RECEPTOR  --ligand $LIGAND --out $RANDOMIZED   \
               --center_x $x  --center_y $y  --center_z $z     \
               --size_x  $dx  --size_y  $dy  --size_z  $dz     \
               --randomize_only        
@@ -18,10 +18,10 @@ function randomize_ligand {
 
 
 function run_docking {
-	./vina  --receptor $RECEPTOR  --ligand $RANDOMIZED  --out $DOCKED  --log $LOGFILE  \
+	vina  --receptor $RECEPTOR  --ligand $RANDOMIZED  --out $DOCKED  --log $LOGFILE  \
               --center_x $x  --center_y $y  --center_z $z     \
               --size_x  $dx  --size_y  $dy  --size_z  $dz     \
-	      --cpu 4  --exhaustiveness 20 --num_modes 10 --energy_range 2
+	      --cpu $CPUS  --exhaustiveness $EXHAUSTIVENESS --num_modes 10 --energy_range 2
 	/bin/rm $RANDOMIZED
 
 }
@@ -85,18 +85,57 @@ function clean_files {
 }
 
 #---------------------------------------------------------------------------------------------------
-RECEPTOR=R.1.pdbqt
-OUTPUT=vina_results
-TRESHOLD=8.0
-REPETITIONS=3
-DATABASE=pdbqt
 
-x=45.0
-y=51.0
-z=41.0
-dx=22.0
-dy=20.0
-dz=22.0
+
+if [ "$1" == "-i" ]
+then
+    shift
+    INPUT=$1
+    shift
+fi
+
+while read -r line
+do
+    key=$(echo $line| awk '{print $1}')
+    value1=$(echo $line| awk '{print $2}')
+    value2=$(echo $line| awk '{print $3}')
+    value3=$(echo $line| awk '{print $4}')
+
+    if [ "$key" == "RECEPTOR" ]
+    then
+        RECEPTOR=$value1
+    elif [ "$key" == "OUTPUT" ]
+    then
+        OUTPUT=$value1
+    elif [ "$key" == "TRESHOLD" ]
+    then
+        TRESHOLD=$value1
+    elif [ "$key" == "REPETITIONS" ]
+    then
+        REPETITIONS=$value1
+    elif [ "$key" == "DATABASE" ]
+    then
+        DATABASE=$value1
+    elif [ "$key" == "CENTER" ]
+    then
+        x=$value1
+        y=$value2
+        z=$value3
+    elif [ "$key" == "SIZE" ]
+    then
+        dx=$value1
+        dy=$value2
+        dz=$value3
+    elif [ "$key" == "CPUS" ]
+    then
+        CPUS=$value1
+    elif [ "$key" == "EXHAUSTIVENESS" ]
+    then
+        EXHAUSTIVENESS=$value1
+    fi
+
+done < $INPUT
+
 
 [ ! -d $OUTPUT ] && mkdir $OUTPUT
 
