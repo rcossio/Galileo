@@ -44,7 +44,7 @@ VMDTEMPLATE=$GALILEOHOME/bin/galileo.box.vmd
 
 cat $INPUT > $PREFIX.pdb
 
-$PYTHON $GALILEOHOME/bin/galileo.box.py >> $PREFIX.pdb
+$PYTHON $GALILEOHOME/bin/galileo.box.py $x $y $z $>> $PREFIX.pdb
 
 sed -e "s/TEMPLATE/$PREFIX/g" $VMDTEMPLATE > $PREFIX.vmd
 
