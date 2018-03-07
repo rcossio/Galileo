@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+VINA=
+if [ "$1" == "vina" ]
+then
+    CMD=galileo.vina
+fi
+
+shift 
+eval $CMD $@
+
