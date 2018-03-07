@@ -6,7 +6,6 @@ VINA=/usr/bin/vina
 AUTODOCK4=/usr/bin/autodock4
 AUTOGRID4=/usr/bin/autogrid4
 
-function define_names {
         NAME=$(basename $VINADOCKED| sed "s/\.vinadocked\.pdbqt//")
         LIGAND=$NAME.pdbqt
         DOCKED=$OUTPUT/$NAME.out.pdbqt

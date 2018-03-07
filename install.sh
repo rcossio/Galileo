@@ -30,9 +30,10 @@ echo ""
 
 [ -d bin ] && /bin/rm -r bin
 mkdir bin
-for file in box.sh galileo rec2pdbqt.sh run.vina.sh prepare.ad4.sh run.ad4.sh
+cd src
+for file in galileo galileo.*.sh  
 do
-cat > bin/$file <<EOF
+cat > ../bin/$file <<EOF
 #!/bin/bash
 GALILEOHOME=$GALILEOHOME
 PYTHON=$PYTHON
@@ -42,8 +43,13 @@ AUTODOCK4=$AUTODOCK4
 AUTOGRID4=$AUTOGRID4
 
 EOF
-tail -n +1 src/$file >> bin/$file
-chmod +x bin/$file
+tail -n +2 $file >> ../bin/$file
+chmod +x ../bin/$file
+done
+
+for file in galileo.*.py galileo.*.vmd
+do
+cp $file ../bin/$file
 done
 
 echo "You should move move $GALILEOHOME/bin/galileo to an executable path"

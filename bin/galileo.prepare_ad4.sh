@@ -6,7 +6,6 @@ VINA=/usr/bin/vina
 AUTODOCK4=/usr/bin/autodock4
 AUTOGRID4=/usr/bin/autogrid4
 
-#!/bin/bash
 
 PREFIX=_TEMP_
 

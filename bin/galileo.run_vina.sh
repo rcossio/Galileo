@@ -6,7 +6,6 @@ VINA=/usr/bin/vina
 AUTODOCK4=/usr/bin/autodock4
 AUTOGRID4=/usr/bin/autogrid4
 
-#!/bin/bash
 
 function define_names {
         NAME=$(basename $RECEPTOR| sed "s/\.pdbqt//")-$(basename $LIGAND| sed "s/\.pdbqt//")

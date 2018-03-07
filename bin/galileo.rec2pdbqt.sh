@@ -6,7 +6,6 @@ VINA=/usr/bin/vina
 AUTODOCK4=/usr/bin/autodock4
 AUTOGRID4=/usr/bin/autogrid4
 
-#!/bin/bash
 
 PYTHON=/usr/local/mgltools-1.5.6/bin/pythonsh
 SCRIPT=/usr/local/mgltools-1.5.6/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py

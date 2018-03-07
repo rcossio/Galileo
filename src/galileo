@@ -2,23 +2,23 @@
 
 if [ "$1" == "rec2pdbqt" ]
 then
-    CMD=$GALILEOHOME/bin/rec2pdbqt.sh
+    CMD=$GALILEOHOME/bin/galileo.rec2pdbqt.sh
 
 elif [ "$1" == "box" ]
 then
-    CMD=$GALILEOHOME/bin/box.sh
+    CMD=$GALILEOHOME/bin/galileo.box.sh
 
 elif [ "$1" == "vina" ]
 then
-    CMD=$GALILEOHOME/bin/run.vina.sh
+    CMD=$GALILEOHOME/bin/galileo.run_vina.sh
 
 elif [ "$1" == "prepare_ad4" ]
 then
-    CMD=$GALILEOHOME/bin/prepare.ad4.sh
+    CMD=$GALILEOHOME/bin/galileo.prepare_ad4.sh
 
 elif [ "$1" == "ad4" ]
 then
-    CMD=$GALILEOHOME/bin/run.ad4.sh
+    CMD=$GALILEOHOME/bin/galileo.run_ad4.sh
 fi
 
 
