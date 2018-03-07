@@ -2,9 +2,9 @@
 RECEPTOR       rec.pdbqt        #Coments1
 OUTPUT         vina_results
 TRESHOLD       -7.0              # Coments2
-REPETITIONS    1
+REPETITIONS    2
 DATABASE       ligands
 CENTER         45.0 51.0 41.0
 SIZE           22.0 20.0 22.0
 CPUS           4
-EXHAUSTIVENESS 20
+EXHAUSTIVENESS 8
