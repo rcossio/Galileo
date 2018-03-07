@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# galileo vina 
 VINA=
 if [ "$1" == "vina" ]
 then
