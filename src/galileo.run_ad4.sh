@@ -6,16 +6,15 @@ function define_names {
         arrIN=($IN)
         unset IFS
      
-        receptorname=$(echo ${arrIN[0]}) 
-        ligandname=$(echo ${arrIN[1]}| sed -e "s/.vinadocked.pdbqt//") 
+        ligandname=$(basename $VINADOCKED| sed -e "s/.vinadocked.pdbqt//,s/$RECEPTORNAME\-//") 
  
-        NAME=$receptorname-$ligandname
+        NAME=$RECEPTORNAME-$ligandname
         LIGAND=$ligandname.pdbqt
         APPENDEDFILE=$OUTPUT/$NAME.ad4docked.pdbqt
         CONSENSUS=$OUTPUT/$NAME.consensus.pdbqt
         DIVERSE=$OUTPUT/$NAME.diverse.pdbqt
 
-        PREFIX=$OUTPUT/_TEMP_.$receptorname-$ligandname-$repetition
+        PREFIX=$OUTPUT/_TEMP_.$RECEPTORNAME-$ligandname-$repetition
         DOCKED=$PREFIX.out.pdbqt
         LOGFILE=$PREFIX.log
 }
@@ -147,6 +146,7 @@ do
     if [ "$key" == "RECEPTOR" ]
     then
         RECEPTOR=$value1
+        RECEPTORNAME=$(echo $RECEPTOR| sed -e "s/.pdbqt//")
     elif [ "$key" == "RECEPTOR_FILES" ]
     then 
         RECEPTOR_FILES=$value1
@@ -188,10 +188,10 @@ done < $INPUT
 
 [ ! -d $OUTPUT ] && mkdir $OUTPUT
 
-for VINADOCKED in $(ls $VINA_FILES/*.vinadocked.pdbqt)
+for VINADOCKED in $(ls $VINA_FILES/"$RECEPTORNAME"-*.vinadocked.pdbqt)
 do
         define_names
-        for i in $(seq 1 1 $REPETITIONS)
+        for repetition in $(seq 1 1 $REPETITIONS)
         do
 		create_input  2> $PREFIX.error
                 run_docking       2> $PREFIX.error
