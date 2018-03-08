@@ -3,7 +3,7 @@ RECEPTOR_FILES  AD4ReceptorFiles/rec.ad4
 OUTPUT          galileo_results
 TRESHOLD        -7.0
 VINA_FILES      galileo_results
-REPETITIONS     2
+REPETITIONS     1
 DATABASE        ligands
 CONSENSUS_RMSD  2.0
 DIVERSITY_RMSD  2.0

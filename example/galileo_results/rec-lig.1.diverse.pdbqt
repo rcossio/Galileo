@@ -1,7 +1,7 @@
 MODEL
 REMARK VINA RESULT:      -8.6    
-REMARK AD4  RESULT:      -7.41   
-REMARK FIN. RESULT:      -7.98   
+REMARK AD4  RESULT:      -7.73   
+REMARK FIN. RESULT:      -8.15   
 ATOM      1  C8  <0> d          50.598  49.751  38.942  0.00  0.00     0.253 C 
 ATOM      2  O1  <0> d          51.213  48.858  38.400  0.00  0.00    -0.271 OA
 ATOM      3  N1  <0> d          50.197  49.612  40.221  0.00  0.00    -0.344 N 
