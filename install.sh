@@ -16,6 +16,10 @@ echo "Searching for VMD"
 VMD=$(which vmd| head -1)
 echo "    Found $VMD"
 echo ""
+echo "Searching for BC"
+BC=$(which bc| head -1)
+echo "    Found $BC"
+echo ""
 echo "Searching for AutodockVina"
 VINA=$(which vina| head -1)
 echo "    Found $VINA"
@@ -35,16 +39,19 @@ for file in galileo galileo.*.sh
 do
 cat > ../bin/$file <<EOF
 #!/bin/bash
+
 GALILEOHOME=$GALILEOHOME
 PYTHON=$PYTHON
 VMD=$VMD
 VINA=$VINA
 AUTODOCK4=$AUTODOCK4
 AUTOGRID4=$AUTOGRID4
-
+BC=$BC
 EOF
+
 tail -n +2 $file >> ../bin/$file
 chmod +x ../bin/$file
+
 done
 
 for file in galileo.*.py galileo.*.vmd

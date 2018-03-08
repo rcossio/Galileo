@@ -1,11 +1,12 @@
 #!/bin/bash
+
 GALILEOHOME=/home/rodrigo/galileo2018
 PYTHON=/usr/local/anaconda2/bin/python
 VMD=/usr/local/bin/vmd
 VINA=/usr/bin/vina
 AUTODOCK4=/usr/bin/autodock4
 AUTOGRID4=/usr/bin/autogrid4
-
+BC=/usr/bin/bc
 
 if [ "$1" == "rec2pdbqt" ]
 then

@@ -40,14 +40,26 @@ done
 #    Creating .PDB and .VMD
 #---------------------------------------
 PREFIX=_TEMP_
-VMDTEMPLATE=$GALILEOHOME/bin/galileo.box.vmd
 
 cat $INPUT > $PREFIX.pdb
-
 $PYTHON $GALILEOHOME/bin/galileo.box.py $x $y $z $dx $dy $dz >> $PREFIX.pdb
 
+VMDTEMPLATE=$GALILEOHOME/bin/galileo.box.vmd
 sed -e "s/TEMPLATE/$PREFIX/g" $VMDTEMPLATE > $PREFIX.vmd
 
+
+#---------------------------------------
+#    Run VMD
+#---------------------------------------
 $VMD -e $PREFIX.vmd
+
+#---------------------------------------
+#    Show information and close
+#---------------------------------------
 /bin/rm $PREFIX.vmd
 /bin/rm $PREFIX.pdb
+
+echo "Galileo: You have visualized a box with the following properties:"
+echo "CENTER  $x $y $z"
+echo "SIZE    $dx $dy $dz"
+

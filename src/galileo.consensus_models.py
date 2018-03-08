@@ -90,13 +90,10 @@ AD4Models=[]
 for line in open(AD4ModelsFile):
     if line[0:5] == 'MODEL':
         ThisModel = model()
-
     if line[0:6] == 'ENDMDL':
         AD4Models.append(ThisModel)
-
     if line[0:40] == 'USER    Estimated Free Energy of Binding':
         ThisModel.ad4score = float( line.split()[7])
-
     if line[0:4] == 'ATOM':
         ThisModel.atoms.append( [line[30:38], line[38:46], line[46:54], line[77:78]])
         ThisModel.lines.append(line)
@@ -118,10 +115,17 @@ for i in range(NVinaModels):
             elif ModelB.ad4score < ModelA.ad4score:
                 ModelA.ad4score = ModelB.ad4score
 
-filename = open(OutputFile,'w')
 for i in range(NVinaModels):
     if VinaModels[i].accepted:
         VinaModels[i].globalscore = -np.sqrt( VinaModels[i].vinascore * VinaModels[i].ad4score)
+    else:
+        VinaModels[i].globalscore = 0.0
+
+VinaModels = sorted(VinaModels, key=lambda model: model.globalscore)
+
+filename = open(OutputFile,'w')
+for i in range(NVinaModels):
+    if VinaModels[i].accepted:
         VinaModels[i].write(filename)
 filename.close()
 

@@ -1,18 +1,28 @@
+#!/bin/bash
+
 function define_names {
-        NAME=$(basename $VINADOCKED| sed "s/\.vinadocked\.pdbqt//")
-        LIGAND=$NAME.pdbqt
-        DOCKED=$OUTPUT/$NAME.out.pdbqt
-        LOGFILE=$OUTPUT/$NAME.log
-        APPENDEDFILE=$OUTPUT/$NAME.appended.pdbqt
-        PREFIX=$OUTPUT/_TEMP_.$NAME
-	CONSENSUS=$OUTPUT/$NAME.consensus.pdbqt
+        IN=$(basename $VINADOCKED)
+        IFS='-'
+        arrIN=($IN)
+        unset IFS
+     
+        receptorname=$(echo ${arrIN[0]}) 
+        ligandname=$(echo ${arrIN[1]}| sed -e "s/.vinadocked.pdbqt//") 
+ 
+        NAME=$receptorname-$ligandname
+        LIGAND=$ligandname.pdbqt
+        APPENDEDFILE=$OUTPUT/$NAME.ad4docked.pdbqt
+        CONSENSUS=$OUTPUT/$NAME.consensus.pdbqt
         DIVERSE=$OUTPUT/$NAME.diverse.pdbqt
 
+        PREFIX=$OUTPUT/_TEMP_.$receptorname-$ligandname-$repetition
+        DOCKED=$PREFIX.out.pdbqt
+        LOGFILE=$PREFIX.log
 }
 
 function create_input {
 
-	ligand_types=$(grep ATOM $VINAFILES/*.vinadocked.pdbqt | awk '!a[$12]++' | awk '{printf $12" "}')
+	ligand_types=$(grep ATOM $VINA_FILES/*.vinadocked.pdbqt | awk '!a[$12]++' | awk '{printf $12" "}')
 	cat > $PREFIX.dpf <<EOF
 autodock_parameter_version 4.2            # used by autodock to validate parameter set
 seed pid time                             # seeds for random generator
@@ -29,7 +39,7 @@ EOF
 	cat >> $PREFIX.dpf <<EOF
 elecmap $RECEPTOR_FILES.e.map              # electrostatics map
 desolvmap $RECEPTOR_FILES.d.map            # desolvation map
-move $DATABASE/$NAME.pdbqt                # small molecule
+move $DATABASE/$ligandname.pdbqt                # small molecule
 
 tran0 random                              # initial coordinates/A or random
 quaternion0 random                        # initial orientation
@@ -81,21 +91,9 @@ function append_structures {
         for score in $(grep "Estimated Free Energy of Binding" $DOCKED | awk '{print $8}')
         do
 
-                if [[ $(echo "$score <= $TRESHOLD" | bc) -eq 1 ]]
+                if [[ $(echo "$score <= $TRESHOLD" | $BC) -eq 1 ]]
                 then
-                        echo "
-import sys
-longstring=''
-model=$model
-n=0
-for line in open('$DOCKED'):
-    if line[0:5] == 'MODEL': n += 1
-    if n == model:           longstring += line
-sys.stdout.write(longstring)
-                        " > $PREFIX.py
-
-                        python $PREFIX.py >> $APPENDEDFILE
-                        /bin/rm $PREFIX.py
+                        $PYTHON $GALILEOHOME/bin/galileo.get_models.py $DOCKED $model >> $APPENDEDFILE
                 fi
 
                 ((model++))
@@ -110,8 +108,9 @@ function clean_files {
 function consensus_structures {
 	if [ -f $APPENDEDFILE ]
 	then
-		python $GALILEOHOME/src/Galileo.ConsensusModels.py $VINADOCKED $APPENDEDFILE $CONSENSUS_RMSD $CONSENSUS 
-                python $GALILEOHOME/src/Galileo.DiversityModels.py $CONSENSUS $DIVERSITY_RMSD $DIVERSE
+		$PYTHON $GALILEOHOME/bin/galileo.consensus_models.py $VINADOCKED $APPENDEDFILE $CONSENSUS_RMSD $CONSENSUS
+                $PYTHON $GALILEOHOME/bin/galileo.diversity_models.py $CONSENSUS $DIVERSITY_RMSD $DIVERSE
+                [ "$(cat $CONSENSUS| wc -l)" == "0" ] && /bin/rm $CONSENSUS
                 [ "$(cat $DIVERSE| wc -l)" == "0" ] && /bin/rm $DIVERSE
 
 	fi
@@ -160,9 +159,9 @@ do
         dx=$value1
         dy=$value2
         dz=$value3
-    elif [ "$key" == "VINAFILES" ]
+    elif [ "$key" == "VINA_FILES" ]
     then
-        VINAFILES=$value1
+        VINA_FILES=$value1
     elif [ "$key" == "CONSENSUS_RMSD" ]
     then
         CONSENSUS_RMSD=$value1
@@ -176,7 +175,7 @@ done < $INPUT
 
 [ ! -d $OUTPUT ] && mkdir $OUTPUT
 
-for VINADOCKED in $(ls $VINAFILES/*.vinadocked.pdbqt)
+for VINADOCKED in $(ls $VINA_FILES/*.vinadocked.pdbqt)
 do
         define_names
         for i in $(seq 1 1 $REPETITIONS)
@@ -188,10 +187,6 @@ do
                 clean_files
         done
 	consensus_structures
-
-        #CORTO ACA PARA VER
-        exit
-
-
+        
 done
 

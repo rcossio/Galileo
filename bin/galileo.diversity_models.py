@@ -106,6 +106,9 @@ for i in range(NModels):
         if rmsd <= RMSDtreshold:
             ModelA.accepted = False
 
+Models = sorted(Models, key=lambda model: model.globalscore)
+
+
 filename = open(OutputFile,'w')
 for i in range(NModels):
     if Models[i].accepted:

@@ -1,8 +1,8 @@
 RECEPTOR        rec.pdbqt
 RECEPTOR_FILES  AD4ReceptorFiles/rec.ad4
-OUTPUT          ad4_results
+OUTPUT          galileo_results
 TRESHOLD        -7.0
-VINAFILES       vina_results
+VINA_FILES      galileo_results
 REPETITIONS     2
 DATABASE        ligands
 CONSENSUS_RMSD  2.0

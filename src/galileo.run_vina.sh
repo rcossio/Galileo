@@ -1,12 +1,16 @@
 #!/bin/bash
 
 function define_names {
-        NAME=$(basename $RECEPTOR| sed "s/\.pdbqt//")-$(basename $LIGAND| sed "s/\.pdbqt//")
-	RANDOMIZED=$OUTPUT/$NAME.inp.pdbqt
-	DOCKED=$OUTPUT/$NAME.pdbqt
-        LOGFILE=$OUTPUT/$NAME.log
-	APPENDEDFILE=$OUTPUT/$NAME.vinadocked.pdbqt
-	PREFIX=$OUTPUT/_TEMP_.$NAME
+        receptorname=$(basename $RECEPTOR| sed "s/\.pdbqt//")
+        ligandname=$(basename $LIGAND| sed "s/\.pdbqt//")
+        NAME=$receptorname-$ligandname
+        APPENDEDFILE=$OUTPUT/$NAME.vinadocked.pdbqt
+
+	PREFIX=$OUTPUT/_TEMP_.$receptorname-$ligandname-$repetition
+        DOCKED=$PREFIX.pdbqt
+        LOGFILE=$PREFIX.log
+        RANDOMIZED=$PREFIX.inp.pdbqt
+
 }
 
 function randomize_ligand {
@@ -38,7 +42,7 @@ function check_error {
         then 
                 echo "There was an error with $LIGAND"
 
-	# Abserse of docked file
+	# Absense of docked file
         elif [ ! -f $DOCKED ]
         then
                 echo "There was an error with $LIGAND"
@@ -59,21 +63,10 @@ function append_structures {
 	for score in $(head -n -1 $LOGFILE | tail -n +25| awk '{print $2}')
 	do
 
-		if [[ $(echo "$score <= $TRESHOLD" | bc) -eq 1 ]]
+		if [[ $(echo "$score <= $TRESHOLD" | $BC) -eq 1 ]]
 		then
-			echo "
-import sys
-longstring=''
-model=$model
-n=0
-for line in open('$DOCKED'):
-    if line[0:5] == 'MODEL': n += 1
-    if n == model:           longstring += line
-sys.stdout.write(longstring)
-			" > $PREFIX.py
-
-		  	python $PREFIX.py >> $APPENDEDFILE
-			/bin/rm $PREFIX.py
+		  	$PYTHON $GALILEOHOME/bin/galileo.get_models.py $DOCKED $model >> $APPENDEDFILE
+			
 		fi
 		
 		((model++))
@@ -142,9 +135,9 @@ done < $INPUT
 
 for LIGAND in $(ls $DATABASE/*.pdbqt)
 do
-	define_names
-	for i in $(seq 1 1 $REPETITIONS)
+	for repetition in $(seq 1 1 $REPETITIONS)
 	do
+                define_names 
 		randomize_ligand 2> $PREFIX.error
 		run_docking      2> $PREFIX.error
 		check_error
