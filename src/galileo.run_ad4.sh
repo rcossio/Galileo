@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function define_names {
-        ligandname=$(basename $VINADOCKED| sed -e "s/.vinadocked.pdbqt//,s/$RECEPTORNAME\-//") 
+        ligandname=$(basename $VINADOCKED| sed -e "s/.vinadocked.pdbqt//;s/$RECEPTORNAME\-//") 
  
         NAME=$RECEPTORNAME-$ligandname
         LIGAND=$ligandname.pdbqt
