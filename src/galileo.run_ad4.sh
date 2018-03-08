@@ -1,11 +1,6 @@
 #!/bin/bash
 
 function define_names {
-        IN=$(basename $VINADOCKED)
-        IFS='-'
-        arrIN=($IN)
-        unset IFS
-     
         ligandname=$(basename $VINADOCKED| sed -e "s/.vinadocked.pdbqt//,s/$RECEPTORNAME\-//") 
  
         NAME=$RECEPTORNAME-$ligandname
