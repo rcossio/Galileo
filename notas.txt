@@ -1,0 +1,5 @@
+con export no hace falta modificar los scripts en source.
+la idea es separar los "cntroler" de los "step"
+ahora mismo no va a andar, todos los nombres deben estar mal, hay que agregar export a los controladores
+
+recien cuando modifiquemos lo anterior, ahi hay que pensar en extender a multiples cpu/multiples receptores

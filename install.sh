@@ -32,31 +32,19 @@ AUTOGRID4=$(which autogrid4| head -1)
 echo "    Found $AUTOGRID4"
 echo ""
 
-[ -d bin ] && /bin/rm -r bin
-mkdir bin
-cd src
-for file in galileo galileo.*.sh  
-do
-cat > ../bin/$file <<EOF
+cat > galileo <<EOF
 #!/bin/bash
 
-GALILEOHOME=$GALILEOHOME
-PYTHON=$PYTHON
-VMD=$VMD
-VINA=$VINA
-AUTODOCK4=$AUTODOCK4
-AUTOGRID4=$AUTOGRID4
-BC=$BC
+export GALILEOHOME=$GALILEOHOME
+export PYTHON=$PYTHON
+export VMD=$VMD
+export VINA=$VINA
+export AUTODOCK4=$AUTODOCK4
+export AUTOGRID4=$AUTOGRID4
+export BC=$BC
 EOF
 
-tail -n +2 $file >> ../bin/$file
-chmod +x ../bin/$file
+tail -n +2 src/galileo >> galileo
+chmod +x galileo
 
-done
-
-for file in galileo.*.py galileo.*.vmd
-do
-cp $file ../bin/$file
-done
-
-echo "You should move move $GALILEOHOME/bin/galileo to an executable path"
+echo "You should move move $GALILEOHOME/galileo to an executable path"
