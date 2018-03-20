@@ -3,6 +3,8 @@
 #-----------------------------------------
 #    Define local names   
 #-----------------------------------------
+LIGAND="$1"
+repetition="$2"
 
 receptorname=$(basename $RECEPTOR| sed "s/\.pdbqt//")
 ligandname=$(basename $LIGAND| sed "s/\.pdbqt//")
@@ -66,7 +68,7 @@ fi
 #    If there are errors, 
 #    continue with next ligand
 #-----------------------------------------
-if [ -f $PREFIX.error]
+if [ -f $PREFIX.error ]
 then
         break
 fi
@@ -81,7 +83,7 @@ do
 
 	if [[ $(echo "$score <= $TRESHOLD" | $BC) -eq 1 ]]
 	then
-	  	$PYTHON $GALILEOHOME/bin/galileo.get_models.py $DOCKED $model >> $APPENDEDFILE
+	  	$PYTHON $GALILEOHOME/src/galileo.get_models.py $DOCKED $model >> $APPENDEDFILE
 			
 	fi
 		

@@ -26,35 +26,35 @@ do
 
     if [ "$key" == "RECEPTOR" ]
     then
-        RECEPTOR=$value1
+        export RECEPTOR=$value1
     elif [ "$key" == "OUTPUT" ]
     then
-        OUTPUT=$value1
+        export OUTPUT=$value1
     elif [ "$key" == "TRESHOLD" ]
     then
-        TRESHOLD=$value1
+        export TRESHOLD=$value1
     elif [ "$key" == "REPETITIONS" ]
     then
-        REPETITIONS=$value1
+        export REPETITIONS=$value1
     elif [ "$key" == "DATABASE" ]
     then
-        DATABASE=$value1
+        export DATABASE=$value1
     elif [ "$key" == "CENTER" ]
     then
-        x=$value1
-        y=$value2
-        z=$value3
+        export x=$value1
+        export y=$value2
+        export z=$value3
     elif [ "$key" == "SIZE" ]
     then
-        dx=$value1
-        dy=$value2
-        dz=$value3
+        export dx=$value1
+        export dy=$value2
+        export dz=$value3
     elif [ "$key" == "CPUS" ]
     then
-        CPUS=$value1
+        export CPUS=$value1
     elif [ "$key" == "EXHAUSTIVENESS" ]
     then
-        EXHAUSTIVENESS=$value1
+        export EXHAUSTIVENESS=$value1
     fi
 
 done < $INPUT
@@ -79,6 +79,6 @@ for LIGAND in $(ls $DATABASE/*.pdbqt)
 do
 	for repetition in $(seq 1 1 $REPETITIONS)
 	do
-                $GALILEOHOME/src/galileo.vina_step.sh
+                $GALILEOHOME/src/galileo.vina_step.sh $LIGAND $repetition
 	done
 done

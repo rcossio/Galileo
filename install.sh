@@ -32,7 +32,8 @@ AUTOGRID4=$(which autogrid4| head -1)
 echo "    Found $AUTOGRID4"
 echo ""
 
-cat > galileo <<EOF
+[ ! -d bin ] && mkdir bin
+cat > bin/galileo <<EOF
 #!/bin/bash
 
 export GALILEOHOME=$GALILEOHOME
@@ -44,7 +45,7 @@ export AUTOGRID4=$AUTOGRID4
 export BC=$BC
 EOF
 
-tail -n +2 src/galileo >> galileo
-chmod +x galileo
+tail -n +2 src/galileo >> bin/galileo
+chmod +x bin/galileo
 
-echo "You should move move $GALILEOHOME/galileo to an executable path"
+echo "You should move move $GALILEOHOME/bin/galileo to an executable path"

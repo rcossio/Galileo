@@ -1,5 +1,13 @@
 #!/bin/bash
 
+export GALILEOHOME=/home/rcossio/Galileo
+export PYTHON=/shared/anaconda2/bin/python
+export VMD=
+export VINA=/usr/bin/vina
+export AUTODOCK4=/usr/bin/autodock4
+export AUTOGRID4=/usr/bin/autogrid4
+export BC=/usr/bin/bc
+
 if [ "$1" == "rec2pdbqt" ]
 then
     CMD=$GALILEOHOME/src/galileo.rec2pdbqt.sh

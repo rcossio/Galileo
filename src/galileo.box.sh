@@ -42,9 +42,9 @@ done
 PREFIX=_TEMP_
 
 cat $INPUT > $PREFIX.pdb
-$PYTHON $GALILEOHOME/bin/galileo.box.py $x $y $z $dx $dy $dz >> $PREFIX.pdb
+$PYTHON $GALILEOHOME/src/galileo.box.py $x $y $z $dx $dy $dz >> $PREFIX.pdb
 
-VMDTEMPLATE=$GALILEOHOME/bin/galileo.box.vmd
+VMDTEMPLATE=$GALILEOHOME/src/galileo.box.vmd
 sed -e "s/TEMPLATE/$PREFIX/g" $VMDTEMPLATE > $PREFIX.vmd
 
 
