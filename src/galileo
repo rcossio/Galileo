@@ -10,7 +10,7 @@ then
 
 elif [ "$1" == "vina" ]
 then
-    CMD=$GALILEOHOME/src/galileo.run_vina.sh
+    CMD=$GALILEOHOME/src/galileo.ctrl.vina.sh
 
 elif [ "$1" == "prepare_ad4" ]
 then
@@ -18,7 +18,7 @@ then
 
 elif [ "$1" == "ad4" ]
 then
-    CMD=$GALILEOHOME/src/galileo.run_ad4.sh
+    CMD=$GALILEOHOME/src/galileo.ctrl.ad4.sh
 fi
 
 

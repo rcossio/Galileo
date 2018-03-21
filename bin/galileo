@@ -1,8 +1,8 @@
 #!/bin/bash
 
-export GALILEOHOME=/home/rcossio/Galileo
-export PYTHON=/shared/anaconda2/bin/python
-export VMD=
+export GALILEOHOME=/home/rodrigo/Galileo
+export PYTHON=/usr/local/anaconda2/bin/python
+export VMD=/usr/local/bin/vmd
 export VINA=/usr/bin/vina
 export AUTODOCK4=/usr/bin/autodock4
 export AUTOGRID4=/usr/bin/autogrid4
@@ -18,7 +18,7 @@ then
 
 elif [ "$1" == "vina" ]
 then
-    CMD=$GALILEOHOME/src/galileo.run_vina.sh
+    CMD=$GALILEOHOME/src/galileo.ctrl.vina.sh
 
 elif [ "$1" == "prepare_ad4" ]
 then
@@ -26,7 +26,7 @@ then
 
 elif [ "$1" == "ad4" ]
 then
-    CMD=$GALILEOHOME/src/galileo.run_ad4.sh
+    CMD=$GALILEOHOME/src/galileo.ctrl.ad4.sh
 fi
 
 

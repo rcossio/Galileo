@@ -3,8 +3,8 @@ RECEPTOR       rec.pdbqt        #Coments1
 OUTPUT         galileo_results
 TRESHOLD       -6.0              # Coments2
 REPETITIONS    2
-DATABASE       ligands
+LIGANDS        vina.list
 CENTER         45.0 51.0 41.0
 SIZE           22.0 20.0 22.0
-CPUS           6
+CPUS           4
 EXHAUSTIVENESS 8

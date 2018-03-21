@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #-----------------------------------------
-#    Detect input file name 
+#    Parse input file name 
 #-----------------------------------------
 
 if [ "$1" == "-i" ]
@@ -27,6 +27,9 @@ do
     if [ "$key" == "RECEPTOR" ]
     then
         export RECEPTOR=$value1
+    elif [ "$key" == "RECEPTOR_FILES" ]
+    then 
+        export RECEPTOR_FILES=$value1
     elif [ "$key" == "OUTPUT" ]
     then
         export OUTPUT=$value1
@@ -41,20 +44,23 @@ do
         export DATABASE=$value1
     elif [ "$key" == "CENTER" ]
     then
-        export x=$value1
-        export y=$value2
-        export z=$value3
+        export X=$value1
+        export Y=$value2
+        export Z=$value3
     elif [ "$key" == "SIZE" ]
     then
-        export dx=$value1
-        export dy=$value2
-        export dz=$value3
-    elif [ "$key" == "CPUS" ]
+        export DX=$value1
+        export DY=$value2
+        export DZ=$value3
+    elif [ "$key" == "VINA_FILES" ]
     then
-        export CPUS=$value1
-    elif [ "$key" == "EXHAUSTIVENESS" ]
+        export VINA_FILES=$value1
+    elif [ "$key" == "CONSENSUS_RMSD" ]
     then
-        export EXHAUSTIVENESS=$value1
+        export CONSENSUS_RMSD=$value1
+    elif [ "$key" == "DIVERSITY_RMSD" ]
+    then
+        export DIVERSITY_RMSD=$value1
     fi
 
 done < $INPUT
@@ -75,10 +81,13 @@ done < $INPUT
 #    [Can we program the use of multipleCPUs?]
 #-----------------------------------------
 
-for LIGAND in $(ls $DATABASE/*.pdbqt)
+for vinadocked in $(cat $VINA_FILES)
 do
-	for repetition in $(seq 1 1 $REPETITIONS)
-	do
-                $GALILEOHOME/src/galileo.vina_step.sh $LIGAND $repetition
-	done
+        for repetition in $(seq 1 1 $REPETITIONS)
+        do
+                $GALILEOHOME/src/galileo.step.ad4.sh $vinadocked $repetition
+        done
+	$GALILEOHOME/src/galileo.aux.post-docking.sh $vinadocked
+        
 done
+
