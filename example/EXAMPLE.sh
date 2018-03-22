@@ -19,8 +19,8 @@ export PATH=$(pwd)/../bin:$PATH
 
 
 # Run vina calculations
-#ls -1 ligands/* > vina.list
-#galileo vina -i vina.in
+ls -1 ligands/* > vina.list
+galileo vina -i vina.in
 
 
 # Prepare receptor files for ad4

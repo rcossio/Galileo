@@ -1,5 +1,23 @@
 #!/bin/bash
 
+#-------------------------------------------
+#    Capture the SIGINT signal
+#    and terminate child processes
+#-------------------------------------------
+
+term() {
+  echo -e "\nCaught SIGINT/SIGTERM signal!" 
+
+  for child in $(jobs -p)
+  do
+      kill -TERM "$child" 2>/dev/null
+  done
+  exit
+}
+
+trap term SIGINT
+trap term SIGTERM
+
 #-----------------------------------------
 #    Parse input file name 
 #-----------------------------------------
@@ -52,6 +70,9 @@ do
         export DX=$value1
         export DY=$value2
         export DZ=$value3
+    elif [ "$key" == "CPUS" ]
+    then
+        export CPUS=$value1
     elif [ "$key" == "VINA_FILES" ]
     then
         export VINA_FILES=$value1
@@ -80,14 +101,32 @@ done < $INPUT
 #    [Can we extend to multiple receptors?]
 #    [Can we program the use of multipleCPUs?]
 #-----------------------------------------
-
+Tasks=0
 for vinadocked in $(cat $VINA_FILES)
 do
-        for repetition in $(seq 1 1 $REPETITIONS)
-        do
-                $GALILEOHOME/src/galileo.step.ad4.sh $vinadocked $repetition
-        done
-	$GALILEOHOME/src/galileo.aux.post-docking.sh $vinadocked
-        
+        if (( Tasks >= CPUS ))
+        then
+            wait -n
+            ((Tasks--))
+        fi
+
+        #---------------------------------------------
+        #    This is the task to send to each core
+        #---------------------------------------------
+        {
+            for repetition in $(seq 1 1 $REPETITIONS)
+            do
+                    $GALILEOHOME/src/galileo.step.ad4.sh $vinadocked $repetition
+            done
+	    $GALILEOHOME/src/galileo.aux.post-docking.sh $vinadocked
+        } &
+
+        ((Tasks++))
+
 done
+
+#-------------------------------------------
+#    Wait for all child processes to finish
+#-------------------------------------------
+wait
 

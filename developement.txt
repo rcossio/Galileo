@@ -1,0 +1,5 @@
+We should include two interesting features:
+
+    * Handling different ligands
+    * Queuing calculations and using available cores
+

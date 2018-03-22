@@ -538,3 +538,1083 @@ ATOM     25  O4  <0> d          46.434  42.958  43.993 -1.00 -1.13    -0.648 OA
 ATOM     26  O3  <0> d          49.425  45.208  46.710 -0.21 -0.04    -0.389 OA
 ATOM     27  H26 <0> d          49.410  44.308  46.357 +0.08 +0.03    +0.210 HD
 ENDMDL
+MODEL        1
+USER    Run = 1
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.36 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  136.66 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.56 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.03 kcal/mol
+USER        Electrostatic Energy            =   -1.53 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.94 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.94 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 47.820694 50.207896 45.358859
+USER    NEWDPF quaternion0 0.017167 0.611628 0.245056 -0.752040
+USER    NEWDPF axisangle0 0.026045 0.927950 0.371794 -82.465264
+USER    NEWDPF quat0 0.026045 0.927950 0.371794 -82.465264
+USER    NEWDPF dihe0 -28.26 -99.49 -80.08 1.76 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          46.553  50.070  44.108 -0.14 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          46.912  51.078  45.198 -0.22 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          45.620  51.735  45.711 -0.25 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          44.902  52.458  44.574 -0.27 +0.02    +0.084 C 
+ATOM      5  C5  <0> d          45.848  53.407  43.889 -0.20 +0.07    +0.149 C 
+ATOM      6  O1  <0> d          45.404  54.345  43.255 -0.28 -0.18    -0.293 OA
+ATOM      7  C6  <0> d          47.235  53.227  43.978 -0.35 +0.02    +0.058 C 
+ATOM      8  C7  <0> d          47.782  52.155  44.601 -0.32 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          49.236  52.041  44.669 -0.42 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          49.819  51.064  45.342 -0.33 -0.01    -0.021 C 
+ATOM     11  C10 <0> d          49.062  50.031  46.128 -0.34 +0.01    +0.018 C 
+ATOM     12  C11 <0> d          47.615  50.415  46.376 -0.30 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          46.775  49.304  46.984 -0.33 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          47.015  47.906  46.411 -0.33 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          48.495  47.613  46.377 -0.34 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          49.177  48.673  45.483 -0.23 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.601  48.110  45.354 -0.28 +0.01    +0.009 C 
+ATOM     18  C17 <0> d          50.367  46.585  45.201 -0.32 +0.02    +0.039 C 
+ATOM     19  C18 <0> d          48.939  46.297  45.733 -0.32 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          49.057  47.643  47.804 -0.49 +0.01    +0.019 C 
+ATOM     21  C19 <0> d          48.020  45.889  44.587 -0.28 +0.03    +0.049 C 
+ATOM     22  C20 <0> d          48.510  44.571  43.985 -0.39 +0.10    +0.116 C 
+ATOM     23  C21 <0> d          47.682  43.433  44.523 -0.50 +0.19    +0.172 C 
+ATOM     24  O2  <0> d          48.105  42.755  45.429 -0.61 -0.75    -0.648 OA
+ATOM     25  O4  <0> d          46.475  43.175  43.997 -1.15 -1.08    -0.648 OA
+ATOM     26  O3  <0> d          48.985  45.267  46.725 -0.17 -0.04    -0.389 OA
+ATOM     27  H26 <0> d          48.890  44.373  46.367 +0.14 +0.04    +0.210 HD
+ENDMDL
+MODEL        2
+USER    Run = 2
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.99 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   47.55 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.18 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.00 kcal/mol
+USER        Electrostatic Energy            =   -0.19 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.29 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.29 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.219506 50.186440 38.630401
+USER    NEWDPF quaternion0 -0.221585 -0.185892 -0.034775 0.956627
+USER    NEWDPF axisangle0 -0.760635 -0.638110 -0.119373 33.873577
+USER    NEWDPF quat0 -0.760635 -0.638110 -0.119373 33.873577
+USER    NEWDPF dihe0 101.90 -150.16 43.53 -112.86 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.505  50.872  37.006 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.336  51.431  38.418 -0.34 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.670  52.815  38.327 -0.37 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.534  53.770  37.508 -0.54 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          52.936  53.793  38.055 -0.54 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.653  54.749  37.830 -1.04 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.423  52.730  38.828 -0.51 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.698  51.605  39.041 -0.48 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.263  50.545  39.869 -0.52 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.562  49.468  40.182 -0.40 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.133  49.260  39.770 -0.25 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.463  50.532  39.284 -0.26 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.090  50.314  38.669 -0.31 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.962  49.092  37.758 -0.37 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.530  47.876  38.448 -0.33 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          51.020  48.148  38.759 -0.29 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.505  46.766  39.224 -0.42 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.782  45.793  38.255 -0.53 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.589  46.573  37.647 -0.48 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.737  47.596  39.731 -0.36 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.828  46.830  36.163 -0.54 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          51.216  47.443  35.968 -0.39 -0.02    +0.116 C 
+ATOM     23  C21 <0> d          51.130  48.579  34.981 -0.38 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          52.079  48.845  34.283 -0.40 -0.04    -0.648 OA
+ATOM     25  O4  <0> d          49.999  49.294  34.879 +0.05 +0.04    -0.648 OA
+ATOM     26  O3  <0> d          48.377  45.837  37.835 -0.28 +0.01    -0.389 OA
+ATOM     27  H26 <0> d          48.304  45.414  38.701 -0.39 -0.06    +0.210 HD
+ENDMDL
+MODEL        3
+USER    Run = 3
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.41 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  127.08 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.60 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.27 kcal/mol
+USER        Electrostatic Energy            =   -0.33 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.94 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.94 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.541595 48.146017 37.902937
+USER    NEWDPF quaternion0 0.919733 -0.316903 -0.168967 -0.158471
+USER    NEWDPF axisangle0 0.931504 -0.320959 -0.171129 -161.763646
+USER    NEWDPF quat0 0.931504 -0.320959 -0.171129 -161.763646
+USER    NEWDPF dihe0 -23.37 49.53 78.08 79.89 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.899  47.909  39.039 -0.35 +0.00    +0.021 C 
+ATOM      2  C2  <0> d          50.534  47.262  38.812 -0.34 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          49.985  46.775  40.164 -0.26 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          50.930  45.750  40.785 -0.35 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          51.214  44.648  39.800 -0.48 -0.00    +0.149 C 
+ATOM      6  O1  <0> d          51.591  43.564  40.202 -0.49 -0.01    -0.293 OA
+ATOM      7  C6  <0> d          51.042  44.853  38.424 -0.35 -0.01    +0.058 C 
+ATOM      8  C7  <0> d          50.704  46.063  37.914 -0.52 +0.00    -0.046 C 
+ATOM      9  C8  <0> d          50.527  46.199  36.472 -0.61 -0.00    +0.004 C 
+ATOM     10  C9  <0> d          50.110  47.333  35.934 -0.53 +0.00    -0.021 C 
+ATOM     11  C10 <0> d          49.736  48.545  36.738 -0.38 -0.00    +0.018 C 
+ATOM     12  C11 <0> d          49.534  48.242  38.211 -0.31 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.360  49.477  39.080 -0.26 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          50.286  50.650  38.752 -0.26 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          50.254  50.928  37.269 -0.33 +0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.731  49.658  36.528 -0.34 -0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.874  50.167  35.086 -0.47 -0.00    +0.009 C 
+ATOM     18  C17 <0> d          51.484  51.581  35.267 -0.47 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          51.203  52.003  36.732 -0.41 +0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.831  51.316  36.849 -0.36 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          52.505  52.056  37.525 -0.33 +0.00    +0.049 C 
+ATOM     22  C20 <0> d          52.463  53.238  38.496 -0.46 +0.01    +0.116 C 
+ATOM     23  C21 <0> d          53.277  54.376  37.938 -0.51 +0.04    +0.172 C 
+ATOM     24  O2  <0> d          53.106  54.739  36.799 -0.24 -0.16    -0.648 OA
+ATOM     25  O4  <0> d          54.191  54.987  38.707 -0.59 -0.21    -0.648 OA
+ATOM     26  O3  <0> d          50.553  53.277  36.759 -0.38 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          51.160  54.029  36.722 +0.09 +0.01    +0.210 HD
+ENDMDL
+MODEL        4
+USER    Run = 4
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.10 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  212.04 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.30 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.37 kcal/mol
+USER        Electrostatic Energy            =   -0.93 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.68 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.68 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 47.287008 48.039823 46.050987
+USER    NEWDPF quaternion0 -0.471550 0.222712 0.813746 0.256625
+USER    NEWDPF axisangle0 -0.487889 0.230429 0.841942 150.260249
+USER    NEWDPF quat0 -0.487889 0.230429 0.841942 150.260249
+USER    NEWDPF dihe0 -98.08 -25.35 66.24 -73.47 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          48.227  47.346  44.700 -0.18 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          47.915  46.941  46.140 -0.34 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          49.110  46.155  46.704 -0.47 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          49.364  44.900  45.872 -0.39 +0.02    +0.084 C 
+ATOM      5  C5  <0> d          48.096  44.098  45.753 -0.50 +0.07    +0.149 C 
+ATOM      6  O1  <0> d          48.159  42.910  45.499 -0.99 -0.29    -0.293 OA
+ATOM      7  C6  <0> d          46.845  44.700  45.938 -0.58 +0.03    +0.058 C 
+ATOM      8  C7  <0> d          46.711  46.033  46.142 -0.46 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          45.377  46.589  46.342 -0.42 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          45.200  47.867  46.634 -0.43 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          46.330  48.835  46.835 -0.33 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          47.671  48.153  47.030 -0.38 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          48.857  49.105  47.028 -0.35 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.810  50.215  45.977 -0.32 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          47.466  50.902  46.017 -0.29 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          46.375  49.848  45.720 -0.21 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          45.124  50.725  45.557 -0.19 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          45.652  51.956  44.775 -0.25 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          47.191  51.975  44.961 -0.27 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          47.259  51.544  47.395 -0.36 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          47.886  51.662  43.640 -0.25 +0.01    +0.049 C 
+ATOM     22  C20 <0> d          46.855  51.160  42.627 -0.18 +0.02    +0.116 C 
+ATOM     23  C21 <0> d          47.134  49.716  42.300 -0.14 +0.06    +0.172 C 
+ATOM     24  O2  <0> d          48.250  49.272  42.425 +0.06 -0.22    -0.648 OA
+ATOM     25  O4  <0> d          46.140  48.922  41.870 -0.55 -0.54    -0.648 OA
+ATOM     26  O3  <0> d          47.609  53.252  45.451 -0.75 -0.24    -0.389 OA
+ATOM     27  H26 <0> d          48.544  53.445  45.298 +0.12 +0.11    +0.210 HD
+ENDMDL
+MODEL        5
+USER    Run = 5
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.98 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   48.33 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.17 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.00 kcal/mol
+USER        Electrostatic Energy            =   -0.17 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.34 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.34 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.206348 50.350295 38.625478
+USER    NEWDPF quaternion0 0.215901 0.173200 0.006990 -0.960906
+USER    NEWDPF axisangle0 0.779774 0.625552 0.025245 -32.147673
+USER    NEWDPF quat0 0.779774 0.625552 0.025245 -32.147673
+USER    NEWDPF dihe0 101.49 -152.85 42.18 -110.93 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.552  50.982  36.991 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.396  51.582  38.388 -0.35 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.812  52.998  38.257 -0.36 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.740  53.884  37.430 -0.56 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.133  53.840  37.997 -0.53 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.907  54.748  37.761 -1.06 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.549  52.768  38.799 -0.50 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.758  51.692  39.026 -0.49 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.251  50.620  39.886 -0.54 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.485  49.592  40.212 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.051  49.457  39.784 -0.24 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.462  50.753  39.260 -0.27 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.087  50.599  38.630 -0.32 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.901  49.366  37.744 -0.37 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.391  48.136  38.469 -0.32 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.889  48.330  38.795 -0.27 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.288  46.934  39.297 -0.39 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.524  45.981  38.340 -0.50 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.385  46.814  37.698 -0.45 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.565  47.931  39.746 -0.35 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.658  47.024  36.212 -0.52 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          51.097  47.507  36.020 -0.41 -0.02    +0.116 C 
+ATOM     23  C21 <0> d          51.126  48.606  34.990 -0.38 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          52.122  48.793  34.334 -0.37 -0.04    -0.648 OA
+ATOM     25  O4  <0> d          50.043  49.376  34.802 +0.05 +0.04    -0.648 OA
+ATOM     26  O3  <0> d          48.131  46.152  37.884 -0.29 -0.01    -0.389 OA
+ATOM     27  H26 <0> d          48.025  45.748  38.756 -0.44 -0.03    +0.210 HD
+ENDMDL
+MODEL        6
+USER    Run = 6
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.63 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   86.76 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.83 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.42 kcal/mol
+USER        Electrostatic Energy            =   -0.41 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.24 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.24 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.602836 50.613417 37.859546
+USER    NEWDPF quaternion0 -0.538079 -0.838601 0.067423 0.051696
+USER    NEWDPF axisangle0 -0.538800 -0.839724 0.067514 174.073389
+USER    NEWDPF quat0 -0.538800 -0.839724 0.067514 174.073389
+USER    NEWDPF dihe0 -39.54 156.57 22.29 -115.57 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.119  51.658  39.225 -0.34 +0.00    +0.021 C 
+ATOM      2  C2  <0> d          52.377  51.473  38.379 -0.43 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          53.609  51.774  39.249 -0.59 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          53.558  53.209  39.767 -0.44 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.363  54.164  38.621 -0.52 +0.03    +0.149 C 
+ATOM      6  O1  <0> d          53.694  55.328  38.745 -0.91 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          52.813  53.727  37.408 -0.57 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          52.352  52.464  37.242 -0.37 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          51.805  52.075  35.946 -0.45 -0.00    +0.004 C 
+ATOM     10  C9  <0> d          51.426  50.831  35.704 -0.43 +0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.567  49.713  36.697 -0.36 -0.00    +0.018 C 
+ATOM     12  C11 <0> d          52.499  50.052  37.845 -0.38 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          52.500  49.025  38.967 -0.18 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          51.128  48.467  39.351 -0.26 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          50.388  48.028  38.111 -0.29 +0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.217  49.257  37.189 -0.30 -0.00    +0.005 C 
+ATOM     17  C16 <0> d          49.259  48.717  36.116 -0.37 -0.00    +0.009 C 
+ATOM     18  C17 <0> d          48.260  47.856  36.933 -0.37 +0.00    +0.039 C 
+ATOM     19  C18 <0> d          48.948  47.539  38.285 -0.38 +0.00    +0.066 C 
+ATOM     20  C22 <0> d          51.174  46.912  37.412 -0.48 -0.00    +0.019 C 
+ATOM     21  C19 <0> d          48.236  48.265  39.422 -0.33 +0.01    +0.049 C 
+ATOM     22  C20 <0> d          48.141  49.756  39.094 -0.25 +0.01    +0.116 C 
+ATOM     23  C21 <0> d          47.962  50.541  40.368 -0.23 +0.02    +0.172 C 
+ATOM     24  O2  <0> d          48.279  51.706  40.410 -0.55 -0.17    -0.648 OA
+ATOM     25  O4  <0> d          47.450  49.945  41.456 +0.00 -0.18    -0.648 OA
+ATOM     26  O3  <0> d          48.943  46.128  38.518 -0.20 +0.03    -0.389 OA
+ATOM     27  H26 <0> d          48.257  45.833  39.133 -0.45 -0.06    +0.210 HD
+ENDMDL
+MODEL        7
+USER    Run = 7
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.11 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =  209.10 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.31 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.39 kcal/mol
+USER        Electrostatic Energy            =   -0.91 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.66 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.66 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 47.288476 48.035311 46.051413
+USER    NEWDPF quaternion0 -0.474492 0.221584 0.813094 0.254235
+USER    NEWDPF axisangle0 -0.490613 0.229112 0.840718 150.543480
+USER    NEWDPF quat0 -0.490613 0.229112 0.840718 150.543480
+USER    NEWDPF dihe0 -99.97 -21.66 63.65 -75.26 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          48.236  47.348  44.702 -0.18 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          47.915  46.936  46.138 -0.34 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          49.105  46.145  46.705 -0.47 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          49.362  44.894  45.868 -0.38 +0.02    +0.084 C 
+ATOM      5  C5  <0> d          48.095  44.094  45.737 -0.50 +0.07    +0.149 C 
+ATOM      6  O1  <0> d          48.158  42.907  45.477 -0.99 -0.30    -0.293 OA
+ATOM      7  C6  <0> d          46.843  44.697  45.918 -0.58 +0.03    +0.058 C 
+ATOM      8  C7  <0> d          46.710  46.029  46.128 -0.46 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          45.375  46.585  46.324 -0.41 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          45.198  47.862  46.622 -0.43 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          46.328  48.828  46.834 -0.33 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          47.667  48.143  47.034 -0.38 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          48.854  49.093  47.043 -0.36 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.815  50.209  45.998 -0.32 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          47.471  50.897  46.034 -0.29 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          46.381  49.846  45.724 -0.21 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          45.132  50.725  45.559 -0.19 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          45.666  51.960  44.787 -0.26 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          47.204  51.976  44.982 -0.27 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          47.257  51.532  47.414 -0.36 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          47.906  51.669  43.663 -0.25 +0.01    +0.049 C 
+ATOM     22  C20 <0> d          46.888  51.132  42.656 -0.17 +0.02    +0.116 C 
+ATOM     23  C21 <0> d          47.241  49.712  42.293 -0.13 +0.06    +0.172 C 
+ATOM     24  O2  <0> d          48.369  49.310  42.454 +0.07 -0.21    -0.648 OA
+ATOM     25  O4  <0> d          46.302  48.895  41.791 -0.57 -0.54    -0.648 OA
+ATOM     26  O3  <0> d          47.620  53.250  45.481 -0.75 -0.24    -0.389 OA
+ATOM     27  H26 <0> d          48.562  53.431  45.360 +0.12 +0.11    +0.210 HD
+ENDMDL
+MODEL        8
+USER    Run = 8
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.80 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   66.05 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.99 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.40 kcal/mol
+USER        Electrostatic Energy            =   -1.59 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.49 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.49 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.530026 47.358044 42.958641
+USER    NEWDPF quaternion0 0.251697 -0.431825 0.421310 0.756752
+USER    NEWDPF axisangle0 0.385033 -0.660584 0.644499 81.642593
+USER    NEWDPF quat0 0.385033 -0.660584 0.644499 81.642593
+USER    NEWDPF dihe0 30.44 83.69 34.61 -80.28 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          49.420  46.500  41.854 -0.16 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          50.503  47.568  41.708 -0.23 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.130  48.497  40.541 -0.19 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          50.026  47.705  39.240 -0.24 +0.00    +0.084 C 
+ATOM      5  C5  <0> d          51.285  46.911  39.020 -0.30 +0.00    +0.149 C 
+ATOM      6  O1  <0> d          51.579  46.550  37.896 -0.27 +0.02    -0.293 OA
+ATOM      7  C6  <0> d          52.129  46.590  40.092 -0.39 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          51.811  46.895  41.373 -0.36 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          52.744  46.542  42.438 -0.49 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.524  46.898  43.693 -0.50 -0.01    -0.021 C 
+ATOM     11  C10 <0> d          51.347  47.724  44.126 -0.35 +0.01    +0.018 C 
+ATOM     12  C11 <0> d          50.643  48.410  42.970 -0.23 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.333  49.080  43.351 -0.16 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.442  48.291  44.311 -0.15 +0.01    +0.013 C 
+ATOM     15  C14 <0> d          49.257  47.811  45.488 -0.24 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.390  46.905  44.955 -0.32 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.963  46.316  46.254 -0.36 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          49.696  46.041  47.107 -0.46 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          48.559  46.907  46.507 -0.36 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          49.820  49.018  46.249 -0.05 +0.01    +0.019 C 
+ATOM     21  C19 <0> d          47.509  46.018  45.850 -0.39 +0.02    +0.049 C 
+ATOM     22  C20 <0> d          48.102  44.631  45.593 -0.49 +0.05    +0.116 C 
+ATOM     23  C21 <0> d          47.533  44.070  44.316 -0.46 +0.18    +0.172 C 
+ATOM     24  O2  <0> d          48.021  44.372  43.253 -0.64 -0.84    -0.648 OA
+ATOM     25  O4  <0> d          46.485  43.233  44.361 -1.20 -1.02    -0.648 OA
+ATOM     26  O3  <0> d          47.961  47.707  47.531 -0.19 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          47.975  47.299  48.408 -0.23 -0.04    +0.210 HD
+ENDMDL
+MODEL        9
+USER    Run = 9
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.82 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   62.90 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.02 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.44 kcal/mol
+USER        Electrostatic Energy            =   -1.58 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.52 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.52 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.656192 47.391247 42.975646
+USER    NEWDPF quaternion0 0.205113 -0.410133 0.444765 0.769353
+USER    NEWDPF axisangle0 0.321078 -0.642013 0.696224 79.408390
+USER    NEWDPF quat0 0.321078 -0.642013 0.696224 79.408390
+USER    NEWDPF dihe0 32.57 67.30 41.91 -66.57 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          49.613  46.637  41.738 -0.22 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          50.760  47.646  41.738 -0.24 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.549  48.636  40.580 -0.20 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          50.529  47.899  39.244 -0.23 +0.00    +0.084 C 
+ATOM      5  C5  <0> d          51.760  47.044  39.110 -0.32 +0.01    +0.149 C 
+ATOM      6  O1  <0> d          52.141  46.707  38.005 -0.28 +0.02    -0.293 OA
+ATOM      7  C6  <0> d          52.479  46.637  40.242 -0.35 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          52.056  46.914  41.500 -0.38 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          52.864  46.472  42.632 -0.51 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.544  46.795  43.874 -0.50 -0.01    -0.021 C 
+ATOM     11  C10 <0> d          51.376  47.669  44.228 -0.35 +0.01    +0.018 C 
+ATOM     12  C11 <0> d          50.823  48.434  43.040 -0.25 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.519  49.163  43.324 -0.17 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.500  48.390  44.164 -0.14 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.172  47.824  45.391 -0.23 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.303  46.876  44.930 -0.31 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.717  46.210  46.252 -0.45 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          49.362  45.976  46.970 -0.43 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          48.334  46.925  46.303 -0.33 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          49.722  48.970  46.250 -0.12 +0.01    +0.019 C 
+ATOM     21  C19 <0> d          47.306  46.119  45.515 -0.36 +0.02    +0.049 C 
+ATOM     22  C20 <0> d          47.683  44.637  45.551 -0.50 +0.06    +0.116 C 
+ATOM     23  C21 <0> d          47.475  44.033  44.186 -0.43 +0.20    +0.172 C 
+ATOM     24  O2  <0> d          48.175  44.373  43.262 -0.66 -0.80    -0.648 OA
+ATOM     25  O4  <0> d          46.513  43.116  43.998 -1.16 -1.08    -0.648 OA
+ATOM     26  O3  <0> d          47.684  47.720  47.299 -0.16 -0.04    -0.389 OA
+ATOM     27  H26 <0> d          47.621  47.293  48.164 -0.16 -0.03    +0.210 HD
+ENDMDL
+MODEL       10
+USER    Run = 10
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.79 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   66.47 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.98 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.92 kcal/mol
+USER        Electrostatic Energy            =   -0.07 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.01 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.01 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.637064 50.365475 38.537994
+USER    NEWDPF quaternion0 -0.166986 -0.052478 -0.062179 0.982596
+USER    NEWDPF axisangle0 -0.898964 -0.282517 -0.334737 21.410125
+USER    NEWDPF quat0 -0.898964 -0.282517 -0.334737 21.410125
+USER    NEWDPF dihe0 91.11 -180.00 -46.55 109.96 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          52.364  50.903  36.998 -0.34 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.810  51.588  38.246 -0.38 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          51.199  52.939  37.841 -0.48 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          52.258  53.835  37.205 -0.60 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.453  53.944  38.114 -0.53 +0.03    +0.149 C 
+ATOM      6  O1  <0> d          54.206  54.893  38.005 -1.04 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.703  52.971  39.090 -0.59 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          52.946  51.853  39.202 -0.53 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.256  50.890  40.254 -0.45 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.493  49.829  40.463 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.235  49.548  39.693 -0.26 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.729  50.752  38.920 -0.27 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.581  50.442  37.972 -0.32 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          49.709  49.137  37.184 -0.34 -0.00    +0.013 C 
+ATOM     15  C14 <0> d          50.061  48.006  38.120 -0.30 +0.00    -0.009 C 
+ATOM     16  C15 <0> d          51.406  48.344  38.803 -0.30 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.739  47.024  39.516 -0.41 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          51.313  45.946  38.485 -0.51 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          50.338  46.636  37.497 -0.46 -0.01    +0.066 C 
+ATOM     20  C22 <0> d          48.941  47.828  39.153 -0.34 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          50.981  46.759  36.120 -0.50 -0.01    +0.049 C 
+ATOM     22  C20 <0> d          49.943  47.263  35.115 -0.49 -0.02    +0.116 C 
+ATOM     23  C21 <0> d          50.541  48.371  34.288 -0.33 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          49.881  48.909  33.431 +0.17 +0.06    -0.648 OA
+ATOM     25  O4  <0> d          51.807  48.761  34.504 -0.47 +0.02    -0.648 OA
+ATOM     26  O3  <0> d          49.120  45.890  37.412 -0.29 +0.02    -0.389 OA
+ATOM     27  H26 <0> d          48.894  45.412  38.222 -0.13 -0.03    +0.210 HD
+ENDMDL
+MODEL        1
+USER    Run = 1
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.87 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   58.01 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.07 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.99 kcal/mol
+USER        Electrostatic Energy            =   -0.07 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.66 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.66 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.166107 50.483954 38.659114
+USER    NEWDPF quaternion0 0.206445 0.170329 -0.014172 -0.963415
+USER    NEWDPF axisangle0 0.770271 0.635520 -0.052878 -31.092453
+USER    NEWDPF quat0 0.770271 0.635520 -0.052878 -31.092453
+USER    NEWDPF dihe0 81.12 110.64 64.37 -78.42 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.531  51.058  37.008 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.403  51.700  38.388 -0.36 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.873  53.134  38.221 -0.35 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.832  53.961  37.369 -0.57 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.225  53.878  37.934 -0.52 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          54.032  54.750  37.673 -1.06 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.601  52.813  38.764 -0.49 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.770  51.774  39.021 -0.50 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.223  50.707  39.907 -0.54 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.419  49.719  40.262 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          50.980  49.628  39.841 -0.24 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.440  50.932  39.285 -0.28 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.058  50.815  38.662 -0.33 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.822  49.567  37.809 -0.37 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.266  48.338  38.566 -0.31 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.772  48.483  38.883 -0.25 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.118  47.086  39.421 -0.36 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.315  46.138  38.491 -0.47 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.207  46.997  37.829 -0.44 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.437  48.199  39.849 -0.34 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.483  47.157  36.338 -0.50 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          50.935  46.776  36.044 -0.43 -0.03    +0.116 C 
+ATOM     23  C21 <0> d          51.682  47.987  35.548 -0.29 -0.03    +0.172 C 
+ATOM     24  O2  <0> d          52.534  48.495  36.238 -0.02 +0.08    -0.648 OA
+ATOM     25  O4  <0> d          51.401  48.500  34.341 -0.47 +0.05    -0.648 OA
+ATOM     26  O3  <0> d          47.928  46.390  38.036 -0.29 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          47.907  45.758  38.767 -0.43 -0.02    +0.210 HD
+ENDMDL
+MODEL        2
+USER    Run = 2
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.79 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   67.01 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.98 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.41 kcal/mol
+USER        Electrostatic Energy            =   -1.57 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.53 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.53 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.563168 47.551052 43.117980
+USER    NEWDPF quaternion0 -0.177061 0.403061 -0.447257 -0.778558
+USER    NEWDPF axisangle0 -0.282136 0.642254 -0.712677 -77.742551
+USER    NEWDPF quat0 -0.282136 0.642254 -0.712677 -77.742551
+USER    NEWDPF dihe0 58.56 -129.82 47.24 -59.32 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          49.566  46.862  41.807 -0.25 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          50.726  47.852  41.897 -0.23 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.582  48.888  40.770 -0.21 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          50.611  48.203  39.407 -0.21 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          51.834  47.333  39.294 -0.30 +0.01    +0.149 C 
+ATOM      6  O1  <0> d          52.258  47.033  38.195 -0.26 +0.01    -0.293 OA
+ATOM      7  C6  <0> d          52.495  46.872  40.440 -0.37 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          52.021  47.107  41.688 -0.37 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          52.771  46.609  42.836 -0.51 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.400  46.889  44.075 -0.49 -0.01    -0.021 C 
+ATOM     11  C10 <0> d          51.230  47.769  44.411 -0.34 +0.01    +0.018 C 
+ATOM     12  C11 <0> d          50.742  48.588  43.230 -0.25 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.438  49.327  43.485 -0.18 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.371  48.540  44.248 -0.14 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          48.980  47.916  45.481 -0.23 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.115  46.968  45.034 -0.30 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.459  46.245  46.345 -0.45 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          49.071  46.006  46.994 -0.38 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          48.087  46.996  46.319 -0.32 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          49.507  49.019  46.407 -0.21 +0.01    +0.019 C 
+ATOM     21  C19 <0> d          47.084  46.239  45.455 -0.35 +0.02    +0.049 C 
+ATOM     22  C20 <0> d          47.325  44.735  45.594 -0.50 +0.06    +0.116 C 
+ATOM     23  C21 <0> d          47.344  44.101  44.227 -0.40 +0.20    +0.172 C 
+ATOM     24  O2  <0> d          46.667  43.125  44.004 -1.16 -1.04    -0.648 OA
+ATOM     25  O4  <0> d          48.111  44.621  43.257 -0.70 -0.84    -0.648 OA
+ATOM     26  O3  <0> d          47.406  47.764  47.315 -0.17 -0.02    -0.389 OA
+ATOM     27  H26 <0> d          47.629  47.517  48.223 -0.15 -0.03    +0.210 HD
+ENDMDL
+MODEL        3
+USER    Run = 3
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.96 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   49.93 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.15 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.10 kcal/mol
+USER        Electrostatic Energy            =   -0.06 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.37 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.37 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.317220 50.319074 38.751641
+USER    NEWDPF quaternion0 0.216217 0.154702 0.017726 -0.963848
+USER    NEWDPF axisangle0 0.811468 0.580598 0.066524 -30.906526
+USER    NEWDPF quat0 0.811468 0.580598 0.066524 -30.906526
+USER    NEWDPF dihe0 106.94 -28.04 35.91 -104.26 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.722  50.961  37.135 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.501  51.553  38.525 -0.36 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.905  52.963  38.375 -0.34 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.855  53.863  37.590 -0.57 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.225  53.834  38.213 -0.54 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.996  54.753  38.013 -1.11 -0.11    -0.293 OA
+ATOM      7  C6  <0> d          53.620  52.765  39.029 -0.56 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.834  51.678  39.220 -0.51 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.304  50.609  40.096 -0.48 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.539  49.571  40.387 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.126  49.419  39.900 -0.25 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.542  50.710  39.357 -0.27 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.197  50.542  38.670 -0.31 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          49.063  49.310  37.773 -0.35 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.537  48.083  38.514 -0.31 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          51.019  48.294  38.902 -0.28 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.414  46.901  39.416 -0.39 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.702  45.943  38.425 -0.50 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.581  46.764  37.739 -0.45 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.663  47.863  39.755 -0.35 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.912  46.982  36.266 -0.52 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          51.396  47.322  36.122 -0.39 -0.03    +0.116 C 
+ATOM     23  C21 <0> d          51.576  48.329  35.015 -0.30 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          50.789  48.367  34.099 -0.21 +0.07    -0.648 OA
+ATOM     25  O4  <0> d          52.611  49.183  35.046 -0.27 +0.04    -0.648 OA
+ATOM     26  O3  <0> d          48.328  46.086  37.871 -0.29 -0.00    -0.389 OA
+ATOM     27  H26 <0> d          48.155  45.749  38.761 -0.43 -0.03    +0.210 HD
+ENDMDL
+MODEL        4
+USER    Run = 4
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.76 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   70.00 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.95 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.88 kcal/mol
+USER        Electrostatic Energy            =   -0.07 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.70 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.70 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.075642 50.530754 38.730581
+USER    NEWDPF quaternion0 -0.168616 -0.105525 0.002512 0.980014
+USER    NEWDPF axisangle0 -0.847613 -0.530464 0.012625 22.948772
+USER    NEWDPF quat0 -0.847613 -0.530464 0.012625 22.948772
+USER    NEWDPF dihe0 78.63 120.54 67.39 -79.87 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.656  50.982  37.103 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.342  51.726  38.400 -0.36 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.834  53.135  38.052 -0.43 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.895  53.908  37.274 -0.58 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.200  53.888  38.024 -0.54 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          54.032  54.749  37.806 -1.08 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.465  52.896  38.977 -0.56 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          52.611  51.868  39.202 -0.49 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          52.946  50.879  40.221 -0.48 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.105  49.909  40.541 -0.39 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          50.736  49.765  39.940 -0.23 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.270  51.015  39.217 -0.28 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          48.985  50.831  38.426 -0.35 -0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.871  49.518  37.649 -0.38 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.213  48.357  38.552 -0.32 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.662  48.547  39.055 -0.24 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.938  47.201  39.742 -0.32 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.271  46.174  38.790 -0.44 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.259  46.963  37.921 -0.43 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.220  48.305  39.720 -0.35 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.732  47.012  36.472 -0.51 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          51.221  46.665  36.409 -0.41 -0.03    +0.116 C 
+ATOM     23  C21 <0> d          52.003  47.882  35.987 -0.28 -0.03    +0.172 C 
+ATOM     24  O2  <0> d          52.860  48.330  36.711 -0.01 +0.06    -0.648 OA
+ATOM     25  O4  <0> d          51.747  48.468  34.807 -0.35 +0.06    -0.648 OA
+ATOM     26  O3  <0> d          47.967  46.355  38.002 -0.29 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          47.862  45.751  38.750 -0.43 -0.02    +0.210 HD
+ENDMDL
+MODEL        5
+USER    Run = 5
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.89 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   56.16 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.08 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.01 kcal/mol
+USER        Electrostatic Energy            =   -0.07 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.67 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.67 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.145248 50.433542 38.618202
+USER    NEWDPF quaternion0 -0.207204 -0.169373 0.005789 0.963507
+USER    NEWDPF axisangle0 -0.774064 -0.632738 0.021628 31.052890
+USER    NEWDPF quat0 -0.774064 -0.632738 0.021628 31.052890
+USER    NEWDPF dihe0 88.97 114.18 66.19 -79.60 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.510  51.020  36.971 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.364  51.654  38.354 -0.36 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.814  53.081  38.190 -0.37 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.764  53.926  37.346 -0.57 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.155  53.863  37.918 -0.52 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.950  54.747  37.665 -1.05 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.543  52.800  38.746 -0.49 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.727  51.747  38.994 -0.49 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.192  50.684  39.878 -0.54 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.402  49.681  40.225 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          50.967  49.570  39.796 -0.24 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.409  50.868  39.242 -0.27 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.032  50.732  38.611 -0.33 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.820  49.484  37.752 -0.37 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.279  48.259  38.506 -0.32 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.781  48.426  38.832 -0.26 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.145  47.032  39.366 -0.37 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.362  46.076  38.428 -0.48 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.245  46.921  37.763 -0.45 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.446  48.101  39.783 -0.35 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.526  47.091  36.274 -0.51 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          50.993  46.762  35.991 -0.39 -0.03    +0.116 C 
+ATOM     23  C21 <0> d          51.711  48.009  35.544 -0.30 -0.03    +0.172 C 
+ATOM     24  O2  <0> d          52.582  48.484  36.233 -0.02 +0.08    -0.648 OA
+ATOM     25  O4  <0> d          51.382  48.592  34.381 -0.47 +0.05    -0.648 OA
+ATOM     26  O3  <0> d          47.975  46.293  37.960 -0.29 -0.02    -0.389 OA
+ATOM     27  H26 <0> d          47.924  45.749  38.759 -0.43 -0.02    +0.210 HD
+ENDMDL
+MODEL        6
+USER    Run = 6
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =  -10.02 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   45.47 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.21 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.11 kcal/mol
+USER        Electrostatic Energy            =   -0.10 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.30 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.30 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.305959 50.267356 38.626180
+USER    NEWDPF quaternion0 -0.208188 -0.164655 -0.025360 0.963796
+USER    NEWDPF axisangle0 -0.780783 -0.617520 -0.095111 30.928804
+USER    NEWDPF quat0 -0.780783 -0.617520 -0.095111 30.928804
+USER    NEWDPF dihe0 108.27 173.65 39.45 -111.56 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.671  50.895  36.995 -0.36 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.460  51.502  38.381 -0.35 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.831  52.896  38.221 -0.40 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.749  53.806  37.409 -0.56 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.128  53.815  38.011 -0.53 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.876  54.747  37.787 -1.06 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.559  52.766  38.835 -0.50 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.800  51.665  39.053 -0.50 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.307  50.618  39.935 -0.52 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.569  49.568  40.252 -0.41 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.152  49.380  39.789 -0.25 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.532  50.650  39.238 -0.26 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.180  50.443  38.575 -0.31 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          49.059  49.197  37.697 -0.36 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.571  47.990  38.446 -0.31 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          51.053  48.239  38.808 -0.28 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.487  46.862  39.334 -0.41 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.781  45.875  38.367 -0.52 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.631  46.662  37.688 -0.46 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.721  47.769  39.703 -0.35 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.935  46.868  36.208 -0.54 -0.01    +0.049 C 
+ATOM     22  C20 <0> d          51.355  47.412  36.049 -0.38 -0.02    +0.116 C 
+ATOM     23  C21 <0> d          51.375  48.453  34.959 -0.37 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          52.380  49.091  34.752 -0.35 +0.01    -0.648 OA
+ATOM     25  O4  <0> d          50.277  48.671  34.220 -0.04 +0.06    -0.648 OA
+ATOM     26  O3  <0> d          48.395  45.960  37.849 -0.29 +0.01    -0.389 OA
+ATOM     27  H26 <0> d          48.234  45.649  38.750 -0.42 -0.04    +0.210 HD
+ENDMDL
+MODEL        7
+USER    Run = 7
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.84 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   60.97 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.04 kcal/mol
+USER        vdW + Hbond + desolv Energy     =   -9.40 kcal/mol
+USER        Electrostatic Energy            =   -1.64 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.50 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.50 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.573837 47.328832 42.959948
+USER    NEWDPF quaternion0 -0.237384 0.424339 -0.437814 -0.756244
+USER    NEWDPF axisangle0 -0.362811 0.648548 -0.669144 -81.731660
+USER    NEWDPF quat0 -0.362811 0.648548 -0.669144 -81.731660
+USER    NEWDPF dihe0 41.69 71.74 36.47 -75.02 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          49.470  46.509  41.820 -0.18 +0.01    +0.021 C 
+ATOM      2  C2  <0> d          50.593  47.540  41.709 -0.23 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.288  48.481  40.533 -0.19 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          50.199  47.694  39.228 -0.24 +0.00    +0.084 C 
+ATOM      5  C5  <0> d          51.436  46.858  39.046 -0.32 +0.00    +0.149 C 
+ATOM      6  O1  <0> d          51.753  46.487  37.932 -0.28 +0.02    -0.293 OA
+ATOM      7  C6  <0> d          52.234  46.507  40.144 -0.37 +0.01    +0.058 C 
+ATOM      8  C7  <0> d          51.887  46.823  41.415 -0.37 -0.01    -0.046 C 
+ATOM      9  C8  <0> d          52.774  46.439  42.508 -0.50 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.527  46.801  43.755 -0.50 -0.01    -0.021 C 
+ATOM     11  C10 <0> d          51.366  47.667  44.153 -0.35 +0.01    +0.018 C 
+ATOM     12  C11 <0> d          50.722  48.376  42.976 -0.24 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.424  49.091  43.317 -0.17 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.478  48.331  44.248 -0.14 +0.01    +0.013 C 
+ATOM     15  C14 <0> d          49.238  47.824  45.449 -0.24 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.357  46.881  44.951 -0.31 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.868  46.272  46.266 -0.39 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          49.567  46.040  47.078 -0.45 +0.01    +0.039 C 
+ATOM     19  C18 <0> d          48.478  46.944  46.445 -0.35 +0.02    +0.066 C 
+ATOM     20  C22 <0> d          49.818  49.011  46.228 -0.07 +0.01    +0.019 C 
+ATOM     21  C19 <0> d          47.420  46.091  45.754 -0.38 +0.02    +0.049 C 
+ATOM     22  C20 <0> d          47.924  44.652  45.632 -0.49 +0.05    +0.116 C 
+ATOM     23  C21 <0> d          47.457  44.065  44.325 -0.46 +0.19    +0.172 C 
+ATOM     24  O2  <0> d          47.946  44.439  43.286 -0.64 -0.86    -0.648 OA
+ATOM     25  O4  <0> d          46.497  43.127  44.316 -1.17 -1.06    -0.648 OA
+ATOM     26  O3  <0> d          47.877  47.764  47.451 -0.18 -0.04    -0.389 OA
+ATOM     27  H26 <0> d          48.001  47.435  48.352 -0.20 -0.03    +0.210 HD
+ENDMDL
+MODEL        8
+USER    Run = 8
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.62 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   88.30 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.82 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.49 kcal/mol
+USER        Electrostatic Energy            =   -0.33 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.93 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.93 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 50.555976 48.149883 37.858851
+USER    NEWDPF quaternion0 0.910118 -0.316617 -0.191005 -0.186964
+USER    NEWDPF axisangle0 0.926455 -0.322300 -0.194433 -158.448687
+USER    NEWDPF quat0 0.926455 -0.322300 -0.194433 -158.448687
+USER    NEWDPF dihe0 -7.67 39.30 79.43 87.21 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.981  47.954  38.917 -0.34 +0.00    +0.021 C 
+ATOM      2  C2  <0> d          50.603  47.304  38.803 -0.33 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.139  46.875  40.205 -0.29 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.119  45.873  40.808 -0.37 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          51.339  44.730  39.854 -0.49 +0.00    +0.149 C 
+ATOM      6  O1  <0> d          51.738  43.662  40.276 -0.46 -0.01    -0.293 OA
+ATOM      7  C6  <0> d          51.082  44.879  38.484 -0.41 -0.01    +0.058 C 
+ATOM      8  C7  <0> d          50.716  46.068  37.946 -0.51 +0.00    -0.046 C 
+ATOM      9  C8  <0> d          50.450  46.145  36.514 -0.61 -0.00    +0.004 C 
+ATOM     10  C9  <0> d          50.002  47.258  35.955 -0.54 +0.00    -0.021 C 
+ATOM     11  C10 <0> d          49.681  48.503  36.731 -0.38 -0.00    +0.018 C 
+ATOM     12  C11 <0> d          49.570  48.262  38.225 -0.31 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.452  49.533  39.051 -0.25 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          50.357  50.688  38.618 -0.26 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          50.235  50.905  37.129 -0.34 +0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.662  49.603  36.414 -0.35 -0.00    +0.005 C 
+ATOM     17  C16 <0> d          50.717  50.051  34.945 -0.47 -0.00    +0.009 C 
+ATOM     18  C17 <0> d          51.339  51.469  35.030 -0.49 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          51.150  51.952  36.491 -0.42 +0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.788  51.281  36.783 -0.32 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          52.499  52.033  37.199 -0.23 +0.00    +0.049 C 
+ATOM     22  C20 <0> d          52.457  53.141  38.252 -0.48 +0.01    +0.116 C 
+ATOM     23  C21 <0> d          53.134  54.374  37.712 -0.47 +0.04    +0.172 C 
+ATOM     24  O2  <0> d          52.979  54.692  36.557 -0.17 -0.08    -0.648 OA
+ATOM     25  O4  <0> d          53.909  55.119  38.515 -0.63 -0.27    -0.648 OA
+ATOM     26  O3  <0> d          50.505  53.229  36.505 -0.51 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          51.053  53.950  36.166 -0.05 -0.00    +0.210 HD
+ENDMDL
+MODEL        9
+USER    Run = 9
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =   -9.80 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   65.37 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -10.99 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -10.93 kcal/mol
+USER        Electrostatic Energy            =   -0.07 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.72 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.72 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.067958 50.458987 38.640170
+USER    NEWDPF quaternion0 0.193444 0.153396 -0.004135 -0.969037
+USER    NEWDPF axisangle0 0.783439 0.621243 -0.016746 -28.590305
+USER    NEWDPF quat0 0.783439 0.621243 -0.016746 -28.590305
+USER    NEWDPF dihe0 86.77 117.36 69.85 -77.52 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.486  50.999  36.990 -0.35 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.295  51.672  38.348 -0.35 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.749  53.092  38.126 -0.40 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.726  53.915  37.291 -0.56 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.097  53.870  37.910 -0.53 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.899  54.749  37.659 -1.05 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.458  52.832  38.780 -0.51 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.635  51.785  39.031 -0.48 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.071  50.748  39.960 -0.52 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.271  49.755  40.308 -0.40 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          50.851  49.629  39.835 -0.23 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.311  50.909  39.226 -0.27 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          48.956  50.753  38.554 -0.34 -0.00    +0.007 C 
+ATOM     14  C13 <0> d          48.774  49.481  37.724 -0.38 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.208  48.279  38.528 -0.33 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          50.698  48.457  38.898 -0.25 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.046  47.080  39.484 -0.35 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.295  46.097  38.548 -0.47 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.200  46.920  37.823 -0.45 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.333  48.156  39.781 -0.36 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.531  47.048  36.340 -0.51 -0.00    +0.049 C 
+ATOM     22  C20 <0> d          50.993  46.664  36.108 -0.43 -0.03    +0.116 C 
+ATOM     23  C21 <0> d          51.784  47.894  35.744 -0.28 -0.03    +0.172 C 
+ATOM     24  O2  <0> d          52.682  48.268  36.460 -0.02 +0.08    -0.648 OA
+ATOM     25  O4  <0> d          51.492  48.572  34.624 -0.39 +0.05    -0.648 OA
+ATOM     26  O3  <0> d          47.924  46.296  37.995 -0.29 -0.03    -0.389 OA
+ATOM     27  H26 <0> d          47.859  45.748  38.790 -0.43 -0.02    +0.210 HD
+ENDMDL
+MODEL       10
+USER    Run = 10
+USER    DPF = galileo_results/_TEMP_.rec-lig.5-1.dpf
+USER  
+USER    Estimated Free Energy of Binding    =  -10.03 kcal/mol  [=(1)+(2)+(3)-(4)]
+USER    Estimated Inhibition Constant, Ki   =   44.75 nM (nanomolar)  [Temperature = 298.15 K]
+USER    
+USER    (1) Final Intermolecular Energy     =  -11.22 kcal/mol
+USER        vdW + Hbond + desolv Energy     =  -11.10 kcal/mol
+USER        Electrostatic Energy            =   -0.12 kcal/mol
+USER    (2) Final Total Internal Energy     =   -0.26 kcal/mol
+USER    (3) Torsional Free Energy           =   +1.19 kcal/mol
+USER    (4) Unbound System's Energy  [=(2)] =   -0.26 kcal/mol
+USER    
+USER    
+USER    NEWDPF move ligands/lig.5.pdbqt
+USER    NEWDPF about 3.005450 5.267350 -0.063400
+USER    NEWDPF tran0 51.269368 50.193356 38.581286
+USER    NEWDPF quaternion0 0.213999 0.164556 0.039091 -0.962080
+USER    NEWDPF axisangle0 0.784546 0.603283 0.143311 -31.658121
+USER    NEWDPF quat0 0.784546 0.603283 0.143311 -31.658121
+USER    NEWDPF dihe0 98.43 -177.22 40.28 -114.94 
+USER  keepresnum = 1 
+USER  
+USER                              x       y       z     vdW  Elec       q    Type
+USER                           _______ _______ _______ _____ _____    ______ ____
+ATOM      1  C1  <0> d          51.627  50.857  36.962 -0.36 -0.00    +0.021 C 
+ATOM      2  C2  <0> d          51.394  51.435  38.357 -0.34 -0.00    -0.012 C 
+ATOM      3  C3  <0> d          50.732  52.816  38.217 -0.40 +0.00    +0.022 C 
+ATOM      4  C4  <0> d          51.631  53.761  37.425 -0.55 +0.01    +0.084 C 
+ATOM      5  C5  <0> d          53.007  53.794  38.034 -0.53 +0.02    +0.149 C 
+ATOM      6  O1  <0> d          53.733  54.748  37.829 -1.05 -0.12    -0.293 OA
+ATOM      7  C6  <0> d          53.459  52.743  38.843 -0.51 +0.00    +0.058 C 
+ATOM      8  C7  <0> d          52.727  51.620  39.039 -0.49 -0.00    -0.046 C 
+ATOM      9  C8  <0> d          53.255  50.572  39.906 -0.52 +0.00    +0.004 C 
+ATOM     10  C9  <0> d          52.541  49.498  40.202 -0.40 -0.00    -0.021 C 
+ATOM     11  C10 <0> d          51.132  49.283  39.729 -0.25 +0.00    +0.018 C 
+ATOM     12  C11 <0> d          50.484  50.547  39.195 -0.26 +0.00    +0.006 C 
+ATOM     13  C12 <0> d          49.140  50.318  38.522 -0.31 +0.00    +0.007 C 
+ATOM     14  C13 <0> d          49.054  49.083  37.623 -0.37 +0.00    +0.013 C 
+ATOM     15  C14 <0> d          49.592  47.878  38.355 -0.33 -0.00    -0.009 C 
+ATOM     16  C15 <0> d          51.066  48.157  38.729 -0.29 +0.00    +0.005 C 
+ATOM     17  C16 <0> d          51.530  46.782  39.234 -0.42 +0.00    +0.009 C 
+ATOM     18  C17 <0> d          50.854  45.794  38.248 -0.54 -0.00    +0.039 C 
+ATOM     19  C18 <0> d          49.688  46.564  37.575 -0.48 -0.00    +0.066 C 
+ATOM     20  C22 <0> d          48.742  47.615  39.604 -0.37 +0.00    +0.019 C 
+ATOM     21  C19 <0> d          49.994  46.801  36.100 -0.55 -0.01    +0.049 C 
+ATOM     22  C20 <0> d          51.367  47.461  35.963 -0.36 -0.02    +0.116 C 
+ATOM     23  C21 <0> d          51.311  48.520  34.892 -0.37 -0.02    +0.172 C 
+ATOM     24  O2  <0> d          52.311  49.128  34.591 -0.40 +0.00    -0.648 OA
+ATOM     25  O4  <0> d          50.151  48.787  34.273 +0.00 +0.06    -0.648 OA
+ATOM     26  O3  <0> d          48.470  45.829  37.718 -0.28 +0.01    -0.389 OA
+ATOM     27  H26 <0> d          48.382  45.374  38.567 -0.37 -0.05    +0.210 HD
+ENDMDL

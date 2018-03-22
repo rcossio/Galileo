@@ -2,6 +2,7 @@ RECEPTOR        rec.pdbqt
 RECEPTOR_FILES  AD4ReceptorFiles/rec.ad4
 OUTPUT          galileo_results
 TRESHOLD        -6.0
+CPUS            5
 VINA_FILES      ad4.list
 REPETITIONS     1
 DATABASE        ligands

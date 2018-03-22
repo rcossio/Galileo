@@ -1,5 +1,24 @@
 #!/bin/bash
 
+#-------------------------------------------
+#    Capture the SIGINT signal
+#    and terminate child processes
+#-------------------------------------------
+
+term() {
+  echo -e "\nCaught SIGINT/SIGTERM signal!" 
+
+  for child in $(jobs -p)
+  do
+      kill -TERM "$child" 2>/dev/null
+  done
+  exit
+}
+
+trap term SIGINT
+trap term SIGTERM
+
+
 #-----------------------------------------
 #    Parse input file name 
 #-----------------------------------------
@@ -74,12 +93,32 @@ done < $INPUT
 #    [Can we extend to multiple receptors?]
 #    [Can we program the use of multipleCPUs?]
 #-----------------------------------------
-
+Tasks=0
 for ligand in $(cat $LIGANDS)
 do
-	for repetition in $(seq 1 1 $REPETITIONS)
-	do
-                # Run Vina single job
-                $GALILEOHOME/src/galileo.step.vina.sh $ligand $repetition
-	done
+        if (( Tasks >= CPUS ))
+        then
+            wait -n
+            ((Tasks--))
+        fi
+
+        #---------------------------------------------
+        #    This is the task to send to each core
+        #---------------------------------------------
+        {
+		for repetition in $(seq 1 1 $REPETITIONS)
+		do
+                	# Run Vina single job
+                	$GALILEOHOME/src/galileo.step.vina.sh $ligand $repetition
+		done
+        } &
+
+        ((Tasks++))
+
 done
+
+#-------------------------------------------
+#    Wait for all child processes to finish
+#-------------------------------------------
+wait
+

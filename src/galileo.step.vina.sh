@@ -39,7 +39,7 @@ vina  --receptor $RECEPTOR  --ligand $Ligand --out $Randomized   \
 vina  --receptor $RECEPTOR  --ligand $Randomized  --out $Docked  --log $LogFile  \
       --center_x $X  --center_y $Y  --center_z $Z     \
       --size_x  $DX  --size_y  $DY  --size_z  $DZ     \
-      --cpu $CPUS  --exhaustiveness $EXHAUSTIVENESS --num_modes 10 --energy_range 2      1> /dev/null 2>> $Prefix.error
+      --cpu 1  --exhaustiveness $EXHAUSTIVENESS --num_modes 10 --energy_range 2      1> /dev/null 2>> $Prefix.error
 
 /bin/rm $Randomized   2>> $Prefix.error
 
