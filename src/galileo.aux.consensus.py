@@ -75,13 +75,13 @@ for line in open(VinaModelsFile):
     if line[0:5] == 'MODEL':
         ThisModel = model()
 
-    if line[0:6] == 'ENDMDL':
+    elif line[0:6] == 'ENDMDL':
         VinaModels.append(ThisModel)
 
-    if line[0:18] == 'REMARK VINA RESULT':
+    elif line[0:18] == 'REMARK VINA RESULT':
         ThisModel.vinascore = float( line.split()[3])
 
-    if line[0:4] == 'ATOM':
+    else:
         ThisModel.atoms.append( [line[30:38], line[38:46], line[46:54], line[77:78]]) 
         ThisModel.lines.append(line)
 
@@ -90,13 +90,15 @@ AD4Models=[]
 for line in open(AD4ModelsFile):
     if line[0:5] == 'MODEL':
         ThisModel = model()
-    if line[0:6] == 'ENDMDL':
+    elif line[0:6] == 'ENDMDL':
         AD4Models.append(ThisModel)
-    if line[0:40] == 'USER    Estimated Free Energy of Binding':
+    elif line[0:40] == 'USER    Estimated Free Energy of Binding':
         ThisModel.ad4score = float( line.split()[7])
-    if line[0:4] == 'ATOM':
+    elif line[0:4] == 'ATOM':
         ThisModel.atoms.append( [line[30:38], line[38:46], line[46:54], line[77:78]])
         ThisModel.lines.append(line)
+    else:
+	ThisModel.lines.append(line)
 
 
 NVinaModels = len(VinaModels)

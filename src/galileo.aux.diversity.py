@@ -74,22 +74,25 @@ for line in open(RawModelsFile):
     if line[0:5] == 'MODEL':
         ThisModel = model()
 
-    if line[0:6] == 'ENDMDL':
+    elif line[0:6] == 'ENDMDL':
         Models.append(ThisModel)
 
-    if line[0:18] == 'REMARK VINA RESULT':
+    elif line[0:18] == 'REMARK VINA RESULT':
         ThisModel.vinascore = float( line.split()[3])
 
-    if line[0:18] == 'REMARK AD4  RESULT':
+    elif line[0:18] == 'REMARK AD4  RESULT':
         ThisModel.ad4score = float( line.split()[3])
 
-    if line[0:18] == 'REMARK FIN. RESULT':
+    elif line[0:18] == 'REMARK FIN. RESULT':
         ThisModel.globalscore = float( line.split()[3])
 
-
-    if line[0:4] == 'ATOM':
+    elif line[0:4] == 'ATOM':
         ThisModel.atoms.append( [line[30:38], line[38:46], line[46:54], line[77:78]]) 
         ThisModel.lines.append(line)
+
+    else:
+        ThisModel.lines.append(line)
+
 
 Models = sorted(Models, key=lambda model: -model.globalscore)
 NModels = len(Models)
