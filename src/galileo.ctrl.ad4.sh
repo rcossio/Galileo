@@ -116,9 +116,9 @@ do
         {
             for repetition in $(seq 1 1 $REPETITIONS)
             do
-                    $GALILEOHOME/src/galileo.step.ad4.sh $vinadocked $repetition
+                    $GALILEOHOME/src/galileo.step.ad4.sh $vinadocked $repetition 2>&1
             done
-	    $GALILEOHOME/src/galileo.aux.post-docking.sh $vinadocked
+	    $GALILEOHOME/src/galileo.aux.post-docking.sh $vinadocked  2>&1
         } &
 
         ((Tasks++))

@@ -106,26 +106,27 @@ done
 # Stderr reported error
 if [ ! "$(cat $Prefix.error| wc -l)" == "0" ]
 then
-        echo "There was an error with $Ligand"
-
-# Absense of log file
-elif [ ! -f $LogFile ]
-then
-        echo "There was an error with $Ligand"
-
-# Abserse of docked file
-elif [ ! -f $Docked ]
-then
-        echo "There was an error with $Ligand"
-
-# Incorrect ending of log file
-elif [ ! "$(grep 'Successful Completion' $LogFile |wc -l)" == "1" ]
-then
-        echo "There was an error with $Ligand"
-
-# If everithing is OK
+        echo "Galileo: There was an error with $Ligand. Check $Prefix.error file."
 else
         /bin/rm $Prefix.error
+fi
+
+# Absense of log file
+if [ ! -f $LogFile ]
+then
+        echo "Galileo: There was an error with $Ligand. There is no AD4 log file!"
+fi
+
+# Abserse of docked file
+if [ ! -f $Docked ]
+then
+        echo "Galileo: There was an error with $Ligand. There is no AD4 docked file!"
+fi
+
+# Incorrect ending of log file
+if [ ! "$(grep 'Successful Completion' $LogFile |wc -l)" == "1" ]
+then
+        echo "Galileo. There was an error with $Ligand: Unsuccessful completion. Check AD4 log file."
 fi
 
 
