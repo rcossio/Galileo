@@ -23,9 +23,9 @@ a manual or a help section.
 # More information
 For more information please check the example/ folder or write us to 
 
-     sciprot.unq@gmail.com 
+     rodrigoperez93@gmail.com 
 
 Cheers! 
 
-SciProt Team
+
 
